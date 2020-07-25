@@ -37,14 +37,22 @@ def addTwoNumbers(l1, l2):
             current = current.next
     return head
 
-# notes
+# # notes
+# # - 1
+# head = None
+# current = head
+# # 就算改变current， head依旧等于None
 
+# # - 2
+# head = ListNode() # a
+# current = head
+# current = current.next # b
+# current = ListNode()
+# # b并没有连接在a之后
 
-
-
-
-
-
-
-
-
+# # - 3
+# head = ListNode() # a
+# current = head
+# current.next = ListNode()
+# current = current.next # b
+# # b连接在a之后
